@@ -8,7 +8,7 @@ class PendingHooks {
   clear = () => this.hooks = []
 }
 
-export default function getTransiitionUtils() {
+export default function getTransitionUtils() {
   const enterHooks = new PendingHooks()
   const changeHooks = new PendingHooks()
 

@@ -28,7 +28,7 @@ var PendingHooks = function PendingHooks() {
   };
 };
 
-export default function getTransiitionUtils() {
+export default function getTransitionUtils() {
   var enterHooks = new PendingHooks();
   var changeHooks = new PendingHooks();
 

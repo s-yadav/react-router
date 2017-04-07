@@ -2135,10 +2135,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	function createTransitionManager(history, routes) {
 	  var state = {};
 
-	  var _getTransiitionUtils = (0, _TransitionUtils2.default)(),
-	      runEnterHooks = _getTransiitionUtils.runEnterHooks,
-	      runChangeHooks = _getTransiitionUtils.runChangeHooks,
-	      runLeaveHooks = _getTransiitionUtils.runLeaveHooks;
+	  var _getTransitionUtils = (0, _TransitionUtils2.default)(),
+	      runEnterHooks = _getTransitionUtils.runEnterHooks,
+	      runChangeHooks = _getTransitionUtils.runChangeHooks,
+	      runLeaveHooks = _getTransitionUtils.runLeaveHooks;
 
 	  // Signature should be (location, indexOnly), but needs to support (path,
 	  // query, indexOnly)
@@ -3147,7 +3147,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 
 	exports.__esModule = true;
-	exports.default = getTransiitionUtils;
+	exports.default = getTransitionUtils;
 
 	var _AsyncUtils = __webpack_require__(12);
 
@@ -3179,7 +3179,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  };
 	};
 
-	function getTransiitionUtils() {
+	function getTransitionUtils() {
 	  var enterHooks = new PendingHooks();
 	  var changeHooks = new PendingHooks();
 

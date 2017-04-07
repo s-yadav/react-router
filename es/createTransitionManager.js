@@ -2,7 +2,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 import warning from './routerWarning';
 import computeChangedRoutes from './computeChangedRoutes';
-import getTransiitionUtils from './TransitionUtils';
+import getTransitionUtils from './TransitionUtils';
 import _isActive from './isActive';
 import getComponents from './getComponents';
 import matchRoutes from './matchRoutes';
@@ -16,10 +16,10 @@ function hasAnyProperties(object) {
 export default function createTransitionManager(history, routes) {
   var state = {};
 
-  var _getTransiitionUtils = getTransiitionUtils(),
-      runEnterHooks = _getTransiitionUtils.runEnterHooks,
-      runChangeHooks = _getTransiitionUtils.runChangeHooks,
-      runLeaveHooks = _getTransiitionUtils.runLeaveHooks;
+  var _getTransitionUtils = getTransitionUtils(),
+      runEnterHooks = _getTransitionUtils.runEnterHooks,
+      runChangeHooks = _getTransitionUtils.runChangeHooks,
+      runLeaveHooks = _getTransitionUtils.runLeaveHooks;
 
   // Signature should be (location, indexOnly), but needs to support (path,
   // query, indexOnly)

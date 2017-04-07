@@ -1,6 +1,6 @@
 import warning from './routerWarning'
 import computeChangedRoutes from './computeChangedRoutes'
-import getTransiitionUtils from './TransitionUtils'
+import getTransitionUtils from './TransitionUtils'
 import _isActive from './isActive'
 import getComponents from './getComponents'
 import matchRoutes from './matchRoutes'
@@ -16,7 +16,7 @@ function hasAnyProperties(object) {
 export default function createTransitionManager(history, routes) {
   let state = {}
 
-  const { runEnterHooks, runChangeHooks, runLeaveHooks } = getTransiitionUtils()
+  const { runEnterHooks, runChangeHooks, runLeaveHooks } = getTransitionUtils()
 
   // Signature should be (location, indexOnly), but needs to support (path,
   // query, indexOnly)
